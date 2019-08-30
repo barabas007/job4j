@@ -1,8 +1,8 @@
 package ru.job4j;
 
-import  org.junit.Assert;
-import  org.junit.Test;
-import  ru.job4j.conditoin.Max;
+import org.junit.Assert;
+import org.junit.Test;
+import ru.job4j.conditoin.Max;
 
 public class MaxTest {
 
