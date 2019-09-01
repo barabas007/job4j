@@ -2,19 +2,21 @@ package ru.job4j.conditoin;
 
 public class SqMax {
     public static int max(int first, int second, int third, int forth) {
-        int result = forth;
+        int result = third;
         if (first > second) {
             if (first > third) {
                 if (first > forth) {
-                    result = third;
+                    result = first;
                 }
             }
         } else if (second > third) {
             if (second > forth) {
-                result = first;
+                if(second > first) {
+                    result = second;
+                }
             }
-        } else if (third > forth) {
-            result = second;
+        } else if (third < forth) {
+            result = forth;
         }
         return result;
     }
