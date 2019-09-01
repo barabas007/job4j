@@ -11,7 +11,7 @@ public class SqMaxTest {
 
     public void Max() {
         SqMax check = new SqMax();
-        int result = check.max(1, 4, 2,6);
-        Assert.assertEquals(result, 6);
+        int result = check.max(5, 4, 8,6);
+        Assert.assertEquals(result, 8);
     }
 }
