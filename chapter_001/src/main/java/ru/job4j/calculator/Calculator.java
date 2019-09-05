@@ -1,6 +1,20 @@
 package ru.job4j.calculator;
 
+/**
+ * Calculate.
+ * @author Igor Shilov
+ */
+
+
+
 public class Calculator {
+
+    /**
+     * Method add
+     * @param first
+     * @param second
+     *
+     */
 
     public static void add(double first, double second){
 
@@ -11,6 +25,12 @@ public class Calculator {
 
     }
 
+    /**
+     * Method div
+     * @param first
+     * @param second
+     */
+
     public static void div(double first, double second) {
 
         double result = first / second;
@@ -18,6 +38,12 @@ public class Calculator {
         System.out.println(first + " / " + second + " = " + result);
 
     }
+
+    /**
+     * Method multiply
+     * @param first
+     * @param second
+     */
 
 
     public static void multiply(double first, double second) {
@@ -28,6 +54,12 @@ public class Calculator {
 
     }
 
+    /**
+     * Method subtrack
+     * @param first
+     * @param second
+     */
+
     public static void subtrack(double first, double second) {
 
         double result = first - second;
@@ -35,6 +67,11 @@ public class Calculator {
         System.out.println(first + " - " + second + " = " + result);
 
     }
+
+    /**
+     * method main
+     * @param args
+     */
 
 
     public static void main(String[] args) {
