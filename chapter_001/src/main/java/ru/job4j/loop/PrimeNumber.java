@@ -7,19 +7,22 @@ public class PrimeNumber {
 
         int count = 0;
 
+
         for (int i = 2; i < finish ; i++) {
-            boolean prime = true;
+
+
+            if( finish % i == 0)
+
+            break;
 
             for (int j = 2; j < i; j++){
 
-                if(i % j ==0){
-                    prime = false;
-            }
-                if(prime){
-                    count++;
-                }
+                count++;
 
             }
+
+
+
 
         }
         return count;
