@@ -3,17 +3,16 @@ package ru.job4j.array;
 public class EndsWith {
 
     public static boolean endsWith(char[] word, char[] post) {
-        boolean result = false;
+        boolean result = true;
         // проверить. что массив word имеет последние элементы одинаковые с post
 
           for(char i = 0; i < word.length; i++){
 
-              for (char j = 0; j < post.length; j++){
+              if(word[word.length -1 - i] != post[post.length -1 - i]){
 
-                  if(word[word.length -1] == post[post.length -1] & word[word.length - 2] == post[post.length - 2]){
+                      result = false;
 
-                      return true;
-                  }
+                      break;
               }
           }
         return result;

@@ -8,8 +8,11 @@ public class Min {
             // проверить, что эталон больше, чем элемент. записать в эталон элемент массива.
             if(array[index] < min) {
                 min = array[index];
+
             }
         }
+
         return min;
     }
+
 }
