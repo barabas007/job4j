@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.*;
+
 import ru.job4j.loop.CheckPrimeNumber;
 
 public class CheckPrimeNumberTest {

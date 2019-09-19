@@ -5,6 +5,7 @@ import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
+
 import ru.job4j.loop.Board;
 
 public class BoardTest {
@@ -25,7 +26,7 @@ public class BoardTest {
         Board board = new Board();
         String result = board.paint(5, 4);
         final String line = System.getProperty("line.separator");
-        String expected = String.format("x x x%s x x %sx x x%s x x %s", line, line, line,line);
+        String expected = String.format("x x x%s x x %sx x x%s x x %s", line, line, line, line);
         assertThat(result, is(expected));
 
     }

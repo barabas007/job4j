@@ -15,10 +15,9 @@ public class ConverterTest {
     }
 
 
+    //public static int rubleToDollar(int value){
 
-   //public static int rubleToDollar(int value){
-
-   //}
+    //}
 
     @Test
     public void rubleToDollar() {

@@ -6,14 +6,13 @@ import ru.job4j.loop.Counter;
 import org.junit.Assert;
 
 
-
 public class CounterTest {
 
     @Test
 
-    public void whenSumEvenNumbersFromOneToTenThenThirty(){
+    public void whenSumEvenNumbersFromOneToTenThenThirty() {
         Counter check = new Counter();
-        int result = check.add(1,10);
+        int result = check.add(1, 10);
         Assert.assertEquals(result, 30);
     }
 

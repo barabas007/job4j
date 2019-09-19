@@ -2,9 +2,12 @@ package ru.job4j.array;
 
 import org.junit.Ignore;
 import org.junit.Test;
+
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
+
 import ru.job4j.array.FindLoop;
+
 @Ignore
 
 public class FindtLoopTest {
@@ -98,27 +101,27 @@ public class FindtLoopTest {
     @Test
     public void whenSort6() {
         FindLoop find = new FindLoop();
-        int[] input = new int[] {7, 4, 3, 2, 1, 9};
-        int result[] = find.sort(input);
-        int[] expect = new int[] {1, 2, 3, 4, 7, 9};
+        int[] input = new int[]{7, 4, 3, 2, 1, 9};
+        int[] result = find.sort(input);
+        int[] expect = new int[]{1, 2, 3, 4, 7, 9};
         assertThat(result, is(expect));
     }
 
     @Test
     public void whenSort3() {
         FindLoop find = new FindLoop();
-        int[] input = new int[] {3, 7, 0};
-        int result[] = find.sort(input);
-        int[] expect = new int[] {0, 3, 7};
+        int[] input = new int[]{3, 7, 0};
+        int[] result = find.sort(input);
+        int[] expect = new int[]{0, 3, 7};
         assertThat(result, is(expect));
     }
 
     @Test
     public void whenSort() {
         FindLoop find = new FindLoop();
-        int[] input = new int[] {3, 4, 1, 2, 5};
-        int result[] = find.sort(input);
-        int[] expect = new int[] {1, 2, 3, 4, 5};
+        int[] input = new int[]{3, 4, 1, 2, 5};
+        int[] result = find.sort(input);
+        int[] expect = new int[]{1, 2, 3, 4, 5};
         assertThat(result, is(expect));
     }
 

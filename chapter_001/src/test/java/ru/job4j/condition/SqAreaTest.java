@@ -1,4 +1,5 @@
 package ru.job4j.condition;
+
 import org.junit.Test;
 import ru.job4j.conditoin.SqArea;
 

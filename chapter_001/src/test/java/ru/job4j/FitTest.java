@@ -8,23 +8,24 @@ public class FitTest {
 
     @Test
 
-    public void manWeight(){
+    public void manWeight() {
 
         double heightMan = 180;
         double expectedMan = 92;
         double outMan = Fit.manWeight(heightMan);
-        Assert.assertEquals( equals(expectedMan), equals(outMan));
+        Assert.assertEquals(equals(expectedMan), equals(outMan));
 
 
     }
-       @Test
 
-    public void womanWeight(){
+    @Test
+
+    public void womanWeight() {
 
         double heightWoman = 110;
         double expectedWoman = 0;
         double outWoman = Fit.womanWeight(heightWoman);
-        Assert.assertEquals(equals(expectedWoman),equals(outWoman));
+        Assert.assertEquals(equals(expectedWoman), equals(outWoman));
     }
 
 }

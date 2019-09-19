@@ -1,7 +1,7 @@
 package ru.job4j.conditoin;
 
 public class SqMax {
-    public  int max(int first, int second, int third, int forth) {
+    public int max(int first, int second, int third, int forth) {
         int result = third;
         if (first > second) {
             if (first > third) {
@@ -11,7 +11,7 @@ public class SqMax {
             }
         } else if (second > third) {
             if (second > forth) {
-                if(second > first) {
+                if (second > first) {
                     result = second;
                 }
             }
