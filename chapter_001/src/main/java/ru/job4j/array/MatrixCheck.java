@@ -11,12 +11,18 @@ public class MatrixCheck {
             for (int cell = 0; cell < board.length; cell++) {
                 if (board[row][cell] == 'X') {
                     count++;
-                }
-                if (board[cell][row] == 'X') {
                     count2++;
                 }
+
+
+
                 System.out.println();
             }
+            if((count == board.length || count2 == board.length)){
+
+                return true;
+            }
+            break;
         }
         return result;
     }
