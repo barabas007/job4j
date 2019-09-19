@@ -2,21 +2,21 @@ package ru.job4j.calculator;
 
 /**
  * Calculate.
+ *
  * @author Igor Shilov
  */
-
 
 
 public class Calculator {
 
     /**
      * Method add
+     *
      * @param first
      * @param second
-     *
      */
 
-    public static void add(double first, double second){
+    public static void add(double first, double second) {
 
         double result = first + second;
 
@@ -27,6 +27,7 @@ public class Calculator {
 
     /**
      * Method div
+     *
      * @param first
      * @param second
      */
@@ -41,6 +42,7 @@ public class Calculator {
 
     /**
      * Method multiply
+     *
      * @param first
      * @param second
      */
@@ -56,6 +58,7 @@ public class Calculator {
 
     /**
      * Method subtrack
+     *
      * @param first
      * @param second
      */
@@ -70,16 +73,17 @@ public class Calculator {
 
     /**
      * method main
+     *
      * @param args
      */
 
 
     public static void main(String[] args) {
 
-        add(1 , 1);
-        div(4 , 2);
-        multiply(2 , 1);
-        subtrack(10 , 5);
+        add(1, 1);
+        div(4, 2);
+        multiply(2, 1);
+        subtrack(10, 5);
     }
 
 }

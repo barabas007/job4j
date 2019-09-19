@@ -3,7 +3,6 @@ package ru.job4j.conditoin;
 public class DummyBot {
 
 
-
     public static String answer(String question) {
         String rsl = "Это ставит меня в тупик. Задайте другой вопрос.";
         if ("Привет Бот.".equals(question)) {
@@ -20,10 +19,8 @@ public class DummyBot {
     public static void main(String[] args) {
 
 
-
-
         System.out.println(answer("Привет Бот."));
-        System.out.println( answer("Пока."));
+        System.out.println(answer("Пока."));
         System.out.println(answer("Сколько будет 2 + 2?"));
 
 

@@ -6,15 +6,15 @@ public class EndsWith {
         boolean result = true;
         // проверить. что массив word имеет последние элементы одинаковые с post
 
-          for(char i = 0; i < word.length; i++){
+        for (char i = 0; i < word.length; i++) {
 
-              if(word[word.length -1 - i] != post[post.length -1 - i]){
+            if (word[word.length - 1 - i] != post[post.length - 1 - i]) {
 
-                      result = false;
+                result = false;
 
-                      break;
-              }
-          }
+                break;
+            }
+        }
         return result;
     }
 }

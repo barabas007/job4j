@@ -28,7 +28,7 @@ public class FindLoop {
         return rst;
     }
 
-    public int[]sort(int[] data) {
+    public int[] sort(int[] data) {
 
         for (int left = 0; left < data.length; left++) {
             int minIndex = left;
