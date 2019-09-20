@@ -9,7 +9,7 @@ public class SqMaxTest {
     @Test
 
 
-    public void Max() {
+    public void max() {
         SqMax check = new SqMax();
         int result = check.max(5, 4, 8, 6);
         Assert.assertEquals(result, 8);
