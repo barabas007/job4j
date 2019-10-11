@@ -5,11 +5,11 @@ import static java.lang.Math.pow;
 
 
 public class Point {
-    private int x;
+    private double x;
 
-    private int y;
+    private double y;
 
-    public Point(int first, int second) {
+    public Point(double first, double second) {
         this.x = first;
         this.y = second;
     }
