@@ -3,14 +3,16 @@ package ru.job4j;
 import org.junit.Assert;
 import org.junit.Test;
 import ru.job4j.conditoin.Point;
+import static org.hamcrest.core.Is.is;
 
 public class PointTest {
 
     @Test
 
     public void distans() {
-        double expectedPoint = 2;
-        double outPoint = Point.distance(new Point(0, 2));
-        Assert.assertEquals(equals(expectedPoint), equals(outPoint));
+        Point a = new Point(0, 0);
+        Point b = new Point(0, 2);
+        double dist =  a.distance(b);
+        Assert.assertThat(2.0, is(dist));
     }
 }
