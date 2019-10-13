@@ -46,7 +46,7 @@ public class Triangle {
         double c = second.distance(third);
         double p = period(a, b, c);
         if (this.exist(a, b, c)) {
-            double areaSqrt = Math.sqrt(p *(p - ab) * (p - ac) * (p - bc));
+            rsl = Math.sqrt(p *(p - ab) * (p - ac) * (p - bc));
             // написать формулу для расчета площади треугольника.
             rsl = -1;
         }
