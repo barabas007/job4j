@@ -24,7 +24,7 @@ public class Triangle {
      * @return Периметр.
      */
     public double period(double a, double b, double c) {
-         perim = (a + b + c) / 2;
+        double perim = (a + b + c) / 2;
         return perim;
     }
 
@@ -64,7 +64,7 @@ public class Triangle {
     private boolean exist(double a, double c, double b) {
         if ((a + c) > c && (a + c) > b && (a + b + c) > c) {
         }
-        return false;
+        return true;
     }
 
 
