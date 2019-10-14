@@ -24,8 +24,8 @@ public class Triangle {
      * @return Периметр.
      */
     public double period(double a, double b, double c) {
-        double perim = (a + b + c) / 2;
-        return -1;
+         perim = (a + b + c) / 2;
+        return perim;
     }
 
     /**
@@ -47,8 +47,6 @@ public class Triangle {
         double p = period(a, b, c);
         if (this.exist(a, b, c)) {
             rsl = Math.sqrt(p *(p - ab) * (p - ac) * (p - bc));
-            // написать формулу для расчета площади треугольника.
-            rsl = -1;
         }
         return rsl;
     }
