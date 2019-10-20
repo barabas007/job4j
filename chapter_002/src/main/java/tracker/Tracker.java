@@ -35,4 +35,13 @@ public class Tracker {
         return String.valueOf(rm.nextLong() + System.currentTimeMillis());
 
     }
+    public boolean delete(String id){
+        for (int i = 0; i < items.length ; i++) {
+            if(items[i] == String id){
+                this.items[i] = 0;
+            }
+            return true;
+
+        }
+    }
 }
