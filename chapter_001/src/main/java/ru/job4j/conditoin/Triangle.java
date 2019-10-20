@@ -46,7 +46,7 @@ public class Triangle {
         double c = second.distance(third);
         double p = period(a, b, c);
         if (this.exist(a, b, c)) {
-            rsl = Math.sqrt(p *(p - ab) * (p - ac) * (p - bc));
+            rsl = Math.sqrt(p *(p - b) * (p - a) * (p - c));
         }
         return rsl;
     }
@@ -61,7 +61,7 @@ public class Triangle {
      * @param c Длина от точки b c.
      * @return
      */
-    private boolean exist(double a, double c, double b) {
+    public static boolean exist(double a, double c, double b) {
         if ((a + c) > c && (a + c) > b && (a + b + c) > c) {
         }
         return true;
