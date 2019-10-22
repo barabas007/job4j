@@ -1,4 +1,7 @@
 package tracker;
+
+import java.util.Random;
+
 /**
  * @version $Id$
  * @since 0.1
@@ -35,10 +38,10 @@ public class Tracker {
         return String.valueOf(rm.nextLong() + System.currentTimeMillis());
 
     }
-    public boolean delete(String id){
-        for (int i = 0; i < items.length ; i++) {
-            if(items[i] == String id){
-                this.items[i] = 0;
+    public boolean delete(String id) {
+        for (int i = 0; i < items.length; i++) {
+            if (items[i] == equals(String id)) {
+                this.items[i] = null;
             }
             return true;
 
