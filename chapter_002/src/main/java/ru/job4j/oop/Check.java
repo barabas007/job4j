@@ -1,7 +1,5 @@
 package ru.job4j.oop;
 
-import org.w3c.dom.ls.LSOutput;
-
 public class Check {
     static int counter;
     static boolean condition;
