@@ -23,6 +23,6 @@ public class Item {
         this.name = name;
     }
 
-    public remove(Item item) {
+    public Item(Item item) {
     }
 }

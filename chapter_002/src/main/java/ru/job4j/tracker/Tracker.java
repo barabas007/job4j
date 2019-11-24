@@ -28,24 +28,25 @@ public class Tracker {
 
 
     public boolean delete(String id) {
+        boolean result = false;
         for (int index = 0; index < this.position; index++) {
             Item item = this.items[index];
             if (item.getId().equals(id)) {
-                this.items[index] = null;
-                item.remove(this.items[index]);
+                System.arraycopy(items, index + 1, items, index, items.length - index - 1);
+                result = true;
+                position--;
             }
         }
-        return true;
-
+        return result;
 
         /**
          * Метод генерирует уникальный ключ для заявки.
          * Так как у заявки нет уникальности полей, имени и описание. Для идентификации нам нужен уникальный ключ.
          * @return Уникальный ключ.
          */
-        private String generateId() {
+        private String generateId () {
             Random rm = new Random();
             return String.valueOf(rm.nextLong() + System.currentTimeMillis());
         }
     }
-}
+    }
