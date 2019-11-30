@@ -35,10 +35,11 @@ public class Tracker {
                 System.arraycopy(items, index + 1, items, index, items.length - index - 1);
                 result = true;
                 position--;
+                break;
             }
         }
         return result;
-
+    }
         /**
          * Метод генерирует уникальный ключ для заявки.
          * Так как у заявки нет уникальности полей, имени и описание. Для идентификации нам нужен уникальный ключ.
@@ -49,4 +50,4 @@ public class Tracker {
             return String.valueOf(rm.nextLong() + System.currentTimeMillis());
         }
     }
-    }
+
