@@ -40,14 +40,30 @@ public class Tracker {
         }
         return result;
     }
-        /**
-         * Метод генерирует уникальный ключ для заявки.
-         * Так как у заявки нет уникальности полей, имени и описание. Для идентификации нам нужен уникальный ключ.
-         * @return Уникальный ключ.
-         */
-        private String generateId () {
-            Random rm = new Random();
-            return String.valueOf(rm.nextLong() + System.currentTimeMillis());
+
+    protected Item findById(String id) {
+        Item result = null;
+        for (Item item : items) {
+            if(item != null && item.getId().equals(id)){
+                result = item;
+                break;
+            }
+
         }
+
+        return result;
     }
 
+    /**
+     * Метод генерирует уникальный ключ для заявки.
+     * Так как у заявки нет уникальности полей, имени и описание. Для идентификации нам нужен уникальный ключ.
+     *
+     * @return Уникальный ключ.
+     */
+    private String generateId() {
+        Random rm = new Random();
+        return String.valueOf(rm.nextLong() + System.currentTimeMillis());
+    }
+
+
+}
