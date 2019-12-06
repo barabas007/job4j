@@ -54,6 +54,14 @@ public class Tracker {
         return result;
     }
 
+    public Item[] findAll(){
+        Item[] result = new Item[this.position];
+        for (int index = 0; index != position; index++) {
+            result[index] = this.items[index];
+        }
+        return result;
+    }
+
     /**
      * Метод генерирует уникальный ключ для заявки.
      * Так как у заявки нет уникальности полей, имени и описание. Для идентификации нам нужен уникальный ключ.
