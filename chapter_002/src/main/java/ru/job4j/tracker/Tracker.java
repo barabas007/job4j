@@ -16,6 +16,8 @@ public class Tracker {
      */
     private int position = 0;
 
+
+
     /**
      * Метод реализаущий добавление заявки в хранилище
      *
@@ -42,13 +44,14 @@ public class Tracker {
         return result;
     }
 
-    protected Item findById(String id) {
-        Item result = null;
-        for (Item item : items) {
-            if(item != null && item.getId().equals(id)){
-                result = item;
+    public Item findById(String id) {
+            Item result = null;
+            for (int index = 0; index < this.position; index++) {
+                if(items[index].getId().equals(id)){
+                    result = item;
                 break;
             }
+
 
         }
 
@@ -56,16 +59,10 @@ public class Tracker {
     }
 
     public Item[] findAll(){
-        Item[] result = new Item[this.position];
-        for (int index = 0; index != position; index++) {
-            result[index] = this.items[index];
-        }
         return Arrays.copyOf(items, position);
     }
 
-  //  public Item[] findByName(String key){
-   //     return ;
-   // }
+
 
     public Item[] findByName(String key){
         Item[]result = new Item[this.position];
