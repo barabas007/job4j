@@ -44,6 +44,18 @@ public class Tracker {
         return result;
     }
 
+    public  boolean replace(String id, Item item){
+        boolean result = false;
+        for( int index = 0; index < this.position; index ++){
+            if(Item.getId().equals(id)){
+                Item.setName(item.getName();
+                result = true;
+                break;
+            }
+        }
+        return result;
+    }
+
     public Item findById(String id) {
             Item result = null;
             for (int index = 0; index < this.position; index++) {

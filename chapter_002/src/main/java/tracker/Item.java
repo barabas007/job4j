@@ -7,7 +7,7 @@ public class Item {
         this.name = name;
     }
 
-    public String getId() {
+    public static String getId() {
         return id;
     }
 
@@ -19,7 +19,7 @@ public class Item {
         return name;
     }
 
-    public void setName(String name) {
+    public static void setName(String name) {
         this.name = name;
     }
 
