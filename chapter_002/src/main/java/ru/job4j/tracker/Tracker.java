@@ -47,8 +47,12 @@ public class Tracker {
     public  boolean replace(String id, Item item){
         boolean result = false;
         for( int index = 0; index < this.position; index ++){
+            // проверим. что ячейка имеет нужный индекс.
             if (items[index].getId().equals(id)){
-                item.setName(Item.getName());
+                // если имеет. то заменим ее на новый объект.
+                items[index] = item;
+                // в новую ячейку вернем старый id
+                item.setId(id);
                 result = true;
                 break;
             }
