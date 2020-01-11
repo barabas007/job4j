@@ -17,7 +17,6 @@ public class Tracker {
     private int position = 0;
 
 
-
     /**
      * Метод реализаущий добавление заявки в хранилище
      *
@@ -44,11 +43,11 @@ public class Tracker {
         return result;
     }
 
-    public  boolean replace(String id, Item item){
+    public boolean replace(String id, Item item) {
         boolean result = false;
-        for( int index = 0; index < this.position; index ++){
+        for (int index = 0; index < this.position; index++) {
             // проверим. что ячейка имеет нужный индекс.
-            if (items[index].getId().equals(id)){
+            if (items[index].getId().equals(id)) {
                 // если имеет. то заменим ее на новый объект.
                 items[index] = item;
                 // в новую ячейку вернем старый id
@@ -61,10 +60,10 @@ public class Tracker {
     }
 
     public Item findById(String id) {
-            Item result = null;
-            for (int index = 0; index < this.position; index++) {
-                if(items[index].getId().equals(id)){
-                    result = this.items[index];
+        Item result = null;
+        for (int index = 0; index < this.position; index++) {
+            if (items[index].getId().equals(id)) {
+                result = this.items[index];
                 break;
             }
 
@@ -74,16 +73,15 @@ public class Tracker {
         return result;
     }
 
-    public Item[] findAll(){
+    public Item[] findAll() {
         return Arrays.copyOf(items, position);
     }
 
 
-
-    public Item[] findByName(String key){
-        Item[]result = new Item[this.position];
+    public Item[] findByName(String key) {
+        Item[] result = new Item[this.position];
         int coint = 0;
-        for (int index = 0; index < position; index ++){
+        for (int index = 0; index < position; index++) {
             if ((items[index].getName().equals(key))) {
                 result[coint++] = items[index];
             }

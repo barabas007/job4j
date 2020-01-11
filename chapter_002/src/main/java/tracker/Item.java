@@ -1,4 +1,5 @@
 package tracker;
+
 public class Item {
     private String id;
     private String name;
@@ -7,7 +8,10 @@ public class Item {
         this.name = name;
     }
 
-    public  String getId() {
+    public Item(Item item) {
+    }
+
+    public String getId() {
         return id;
     }
 
@@ -19,10 +23,7 @@ public class Item {
         return name;
     }
 
-    public  void setName(String name) {
+    public void setName(String name) {
         this.name = name;
-    }
-
-    public Item(Item item) {
     }
 }
