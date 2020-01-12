@@ -1,7 +1,5 @@
 package ru.job4j.tracker;
 
-import tracker.Item;
-
 import java.util.Arrays;
 import java.util.Random;
 
