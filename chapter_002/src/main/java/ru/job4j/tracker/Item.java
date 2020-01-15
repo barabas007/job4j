@@ -7,9 +7,10 @@ public class Item {
     public Item(String name) {
         this.name = name;
     }
+    public Item (){
 
-    public Item(Item item) {
     }
+
 
     public String getId() {
         return id;

@@ -44,11 +44,11 @@ public class Tracker {
     public boolean replace(String id, Item item) {
         boolean result = false;
         for (int index = 0; index < this.position; index++) {
-            // проверим. что ячейка имеет нужный индекс.
+
             if (items[index].getId().equals(id)) {
-                // если имеет. то заменим ее на новый объект.
+
                 items[index] = item;
-                // в новую ячейку вернем старый id
+
                 item.setId(id);
                 result = true;
                 break;
@@ -76,11 +76,11 @@ public class Tracker {
     }
 
 
-    public Item[] findByName(String key) {
+    public Item[] findByName(String name) {  // Что это?
         Item[] result = new Item[this.position];
         int coint = 0;
         for (int index = 0; index < position; index++) {
-            if ((items[index].getName().equals(key))) {
+            if ((items[index].getName().equals(name))) {
                 result[coint++] = items[index];
             }
 
@@ -97,8 +97,11 @@ public class Tracker {
      */
     private String generateId() {
         Random rm = new Random();
+
         return String.valueOf(rm.nextLong() + System.currentTimeMillis());
     }
 
 
 }
+
+
