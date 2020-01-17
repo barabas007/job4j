@@ -21,8 +21,21 @@ public class StartUI {
                 System.out.print("Enter id : ");
                 String id = scanner.nextLine();
                 tracker.delete(id);
+                if (tracker.delete(id)) {
 
-            } else if (select == 6) {
+                    System.out.println("Deletion succeed");
+
+                } else {
+
+                    System.out.println("Invalid id");
+
+                }
+            }else if (select == 1) {
+                System.out.println("=== Show all items ===");
+                System.out.print("Enter items : ");
+                tracker.findAll();
+
+            }else if (select == 6) {
                 run = false;
             }
         }
