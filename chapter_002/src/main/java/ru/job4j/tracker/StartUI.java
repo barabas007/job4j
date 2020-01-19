@@ -3,6 +3,12 @@ package ru.job4j.tracker;
 import java.util.Scanner;
 
 public class StartUI {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Tracker tracker = new Tracker();
+        new StartUI().init(scanner, tracker);
+    }
+
     public void init(Scanner scanner, Tracker tracker) {
         boolean run = false;
         while (run) {
@@ -30,12 +36,17 @@ public class StartUI {
                     System.out.println("Invalid id");
 
                 }
-            }else if (select == 1) {
+            } else if (select == 1) {
                 System.out.println("=== Show all items ===");
                 System.out.print("Enter items : ");
-                tracker.findAll();
-
-            }else if (select == 6) {
+                Item[] items = tracker.findAll();
+                for (int index = 0; index < items.length; index++) {
+                    System.out.println(items[index]);
+                    if (items[index] == null) {
+                        System.out.println("items not found");
+                    }
+                }
+            } else if (select == 6) {
                 run = false;
             }
         }
@@ -50,12 +61,5 @@ public class StartUI {
         System.out.println(" Find item by Id");
         System.out.println("Find items by name");
         System.out.println(" Exit Program");
-    }
-
-
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        Tracker tracker = new Tracker();
-        new StartUI().init(scanner, tracker);
     }
 }

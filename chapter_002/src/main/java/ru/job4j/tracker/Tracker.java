@@ -74,7 +74,7 @@ public class Tracker {
     }
 
 
-    public Item[] findByName(String name) {  // Что это?
+    public Item[] findByName(String name) {
         Item[] result = new Item[this.position];
         int coint = 0;
         for (int index = 0; index < position; index++) {
