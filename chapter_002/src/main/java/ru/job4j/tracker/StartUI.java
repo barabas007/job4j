@@ -9,6 +9,15 @@ public class StartUI {
         new StartUI().init(scanner, tracker);
     }
 
+
+    //  0. Add new Item
+    //1. Show all items
+    //2. Edit item
+    //3. Delete item
+    //4. Find item by Id
+    //5. Find items by name
+    //6. Exit Program
+
     public void init(Scanner scanner, Tracker tracker) {
         boolean run = false;
         while (run) {
@@ -46,20 +55,32 @@ public class StartUI {
                         System.out.println("items not found");
                     }
                 }
+            } else if (select == 4) {
+                System.out.println("=== Find items by name ===");
+                System.out.print("Enter name : ");
+                Item[] items = tracker.findByName("name");
+                for (int index = 0; index < items.length; index++) {
+                    System.out.println(items[index]);
+                    if (items[index] == null) {
+                        System.out.println("items not name");
+                    }
+                }
             } else if (select == 6) {
                 run = false;
             }
-        }
-    }
 
-    private void showMenu() {
-        System.out.println("Menu.");
-        System.out.println("Add new Item");
-        System.out.println(" Show all items");
-        System.out.println("Edit item");
-        System.out.println(" Delete item");
-        System.out.println(" Find item by Id");
-        System.out.println("Find items by name");
-        System.out.println(" Exit Program");
+            private void showMenu () {
+                System.out.println("Menu.");
+                System.out.println("Add new Item");
+                System.out.println(" Show all items");
+                System.out.println("Edit item");
+                System.out.println(" Delete item");
+                System.out.println(" Find item by Id");
+                System.out.println("Find items by name");
+                System.out.println(" Exit Program");
+            }
+
+
+        }
     }
 }
