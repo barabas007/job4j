@@ -61,7 +61,7 @@ public class StartUI {
                 Item[] items = tracker.findByName("name");
                 for (int index = 0; index < items.length; index++) {
                     System.out.println(items[index]);
-                    if (items[index] == null) {
+                    if (items.length == 0 ) {
                         System.out.println("items not name");
                     }
                 }
