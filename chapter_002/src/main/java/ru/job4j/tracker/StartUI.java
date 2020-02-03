@@ -45,7 +45,7 @@ public class StartUI {
                         System.out.println("items not found");
                     }
                 }
-            } else if (select == 4) {
+            } else if (select == 5) {
                 System.out.println("=== Find items by name ===");
                 System.out.print("Enter name : ");
                 Item[] items = tracker.findByName("name");
@@ -55,20 +55,24 @@ public class StartUI {
                         System.out.println("items not name");
                     }
                 }
-            } else if (select == 6) {
-                run = false;
+            } else if (select == 4) {
+                System.out.println("=== Find items by ID ===");
+                System.out.println(" Enter ID : ");
+                Item[] items = tracker.findById(id);
+
+            }
             }
         }
-    }
 
-    private void showMenu () {
-        System.out.println("Menu.");
-        System.out.println("0. Add new Item");
-        System.out.println("1. Show all items");
-        System.out.println("2. Edit item");
-        System.out.println("3. Delete item");
-        System.out.println("4. Find item by Id");
-        System.out.println("5. Find items by name");
-        System.out.println("6. Exit Program");
+        private void showMenu () {
+            System.out.println("Menu.");
+            System.out.println("0. Add new Item");
+            System.out.println("1. Show all items");
+            System.out.println("2. Edit item");
+            System.out.println("3. Delete item");
+            System.out.println("4. Find item by Id");
+            System.out.println("5. Find items by name");
+            System.out.println("6. Exit Program");
+        }
+
     }
-}
