@@ -1,5 +1,4 @@
 package ru.job4j.tracker;
-
 import java.util.Scanner;
 
 public class StartUI {
@@ -9,17 +8,8 @@ public class StartUI {
         new StartUI().init(scanner, tracker);
     }
 
-
-    //  0. Add new Item
-    //1. Show all items
-    //2. Edit item
-    //3. Delete item
-    //4. Find item by Id
-    //5. Find items by name
-    //6. Exit Program
-
     public void init(Scanner scanner, Tracker tracker) {
-        boolean run = false;
+        boolean run = true;
         while (run) {
             this.showMenu();
             System.out.print("Select: ");
@@ -61,26 +51,24 @@ public class StartUI {
                 Item[] items = tracker.findByName("name");
                 for (int index = 0; index < items.length; index++) {
                     System.out.println(items[index]);
-                    if (items.length == 0 ) {
+                    if (items.length == 0) {
                         System.out.println("items not name");
                     }
                 }
             } else if (select == 6) {
                 run = false;
             }
-
-            private void showMenu () {
-                System.out.println("Menu.");
-                System.out.println("Add new Item");
-                System.out.println(" Show all items");
-                System.out.println("Edit item");
-                System.out.println(" Delete item");
-                System.out.println(" Find item by Id");
-                System.out.println("Find items by name");
-                System.out.println(" Exit Program");
-            }
-
-
         }
+    }
+
+    private void showMenu () {
+        System.out.println("Menu.");
+        System.out.println("0. Add new Item");
+        System.out.println("1. Show all items");
+        System.out.println("2. Edit item");
+        System.out.println("3. Delete item");
+        System.out.println("4. Find item by Id");
+        System.out.println("5. Find items by name");
+        System.out.println("6. Exit Program");
     }
 }
