@@ -67,13 +67,21 @@ public class StartUI {
                     System.out.println("Item not found.");
                 }
 
-            }else if (select == 2) {
+            } else if (select == 2) {
                 System.out.println("=== replace Item === ");
-                Item rsl = tracker.replace( id, item);
-                if (rsl !== null){
-                    System.out.println(rsl.setId(id);
+                System.out.println(" Please enter id: ");
+                String id = scanner.nextLine();
+                System.out.println(" Item name: ");
+                String name = scanner.nextLine();
+                Item item = new Item(name);
+                if (tracker.replace(id, item)) {
+                    System.out.println("Item successfully replaced");
+                } else {
+                    System.out.println("Replacing is fallen. Invalid id. Please try again");
                 }
-        }
+            } else if (select == 6) {
+                run = false;
+            }
         }
     }
 
