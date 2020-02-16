@@ -17,11 +17,12 @@ public class TrackerTest {
         Item result = tracker.findById(item.getId());
         assertThat(result.getName(), is(item.getName()));
     }
-    @Test
+   /* @Test
     public void whenReplace(){
         Tracker tracker = new Tracker();
         Item item = new Item("test 2");
-        tracker.replace(id, Item item);
-        Item result = tracker.findById(item.setId();
-    }
+        tracker.add(item);
+        boolean result = tracker.findByName(item.setName("name"));
+        assertThat(result.setName(), is(item.setId( id)));
+    }*/
 }
