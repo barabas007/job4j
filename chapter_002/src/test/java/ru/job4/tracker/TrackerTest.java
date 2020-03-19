@@ -48,7 +48,7 @@ public class TrackerTest {
     @Test
     public void whenFindByName(){
         Tracker tracker = new Tracker();
-        Item item = new Item("test 4");
+        Item item = new Item("test 5");
         tracker.add(item);
         Item[] result = tracker.findByName("1");
         assertThat(result[0].getName(),is(item.getName()));
