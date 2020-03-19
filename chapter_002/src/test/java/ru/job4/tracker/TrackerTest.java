@@ -37,4 +37,21 @@ public class TrackerTest {
         boolean result = tracker.delete(item.getId());
         assertNull(tracker.findById(item.getId()));
     }
+    @Test
+    public void whenFindAll(){
+        Tracker tracker = new Tracker();
+        Item item = new Item("test 4");
+        tracker.add(item);
+        Item[] result = tracker.findAll();
+        assertThat(result[0].getName(), is(item.getName()));
+    }
+    @Test
+    public void whenFindByName(){
+        Tracker tracker = new Tracker();
+        Item item = new Item("test 4");
+        tracker.add(item);
+        Item[] result = tracker.findByName("1");
+        assertThat(result[0].getName(),is(item.getName()));
+    }
+
 }

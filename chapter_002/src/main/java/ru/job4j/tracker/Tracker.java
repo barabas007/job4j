@@ -74,11 +74,11 @@ public class Tracker {
     }
 
 
-    public Item[] findByName(String name) {
+    public Item[] findByName(String key) {
         Item[] result = new Item[this.position];
         int coint = 0;
         for (int index = 0; index < position; index++) {
-            if ((items[index].getName().equals(name))) {
+            if ((items[index].getName().equals(key))) {
                 result[coint++] = items[index];
             }
 
