@@ -55,12 +55,13 @@ public class TrackerTest {
         Item[] result = tracker.findByName("test");
         assertThat(result[0].getName(), is(item.getName()));
     }
+
     @Test
-    public void whenFindById(){
+    public void whenFindById() {
         Tracker tracker = new Tracker();
         Item item = new Item("test 6");
         tracker.add(item);
-        Item result = tracker.findById("id");
+        Item result = tracker.findById(item.getId());
         assertThat(result.getId(), is(item.getId()));
 
     }
