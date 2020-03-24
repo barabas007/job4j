@@ -52,7 +52,7 @@ public class TrackerTest {
         Tracker tracker = new Tracker();
         Item item = new Item("test 5");
         tracker.add(item);
-        Item[] result = tracker.findByName("test");
+        Item[] result = tracker.findByName("test 5");
         assertThat(result[0].getName(), is(item.getName()));
     }
 
