@@ -12,11 +12,16 @@ public class Check {
                 counter++;
             } else if (data[i] == ')') {
                 counter--;
-                if (counter < 0)
+                if (counter < 0) {
                     return false;
+                }
+
             }
+            return counter == 0;
+
         }
-        return counter == 0;
+
+
     }
 
 

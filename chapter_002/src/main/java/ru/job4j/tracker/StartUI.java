@@ -85,15 +85,15 @@ public class StartUI {
         }
     }
 
-        private void showMenu () {
-            System.out.println("Menu.");
-            System.out.println("0. Add new Item");
-            System.out.println("1. Show all items");
-            System.out.println("2. Edit item");
-            System.out.println("3. Delete item");
-            System.out.println("4. Find item by Id");
-            System.out.println("5. Find items by name");
-            System.out.println("6. Exit Program");
-        }
-
+    private void showMenu() {
+        System.out.println("Menu.");
+        System.out.println("0. Add new Item");
+        System.out.println("1. Show all items");
+        System.out.println("2. Edit item");
+        System.out.println("3. Delete item");
+        System.out.println("4. Find item by Id");
+        System.out.println("5. Find items by name");
+        System.out.println("6. Exit Program");
     }
+
+}
